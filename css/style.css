@@ -1,0 +1,35 @@
+body{
+    height: 100svh;
+    background-color: #f6f7f5;
+}
+
+.wrapper{
+    color: var(--dark-text);
+    display: flex;
+    height: 80svh;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 70px;
+    animation: hovering linear 1s infinite alternate;
+}
+
+.hero h2{
+    font-size: 50px;
+    background: linear-gradient(to right, #5edb1a, #48bb0a, #abf186) ;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@keyframes hovering {
+    from{transform: translateY(-20px);}
+    to{transform: translateY(0px);}
+}

@@ -1,0 +1,77 @@
+/* Colour Temlpate */
+:root{
+    --dark-text:#050315;
+    --white-text: #ebe9fc;
+    --primary: #76d742;
+    --secondary: #b5e29d;
+    --accent: #97bd83;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+nav .logo{
+    width: 100px;
+}
+
+nav .logo img{
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.logo img:hover{
+    transform: rotate(-360deg);
+}
+
+nav .logo p{
+    font-size: 16px;
+    color: white;
+}
+
+
+nav a{
+    color: var(--dark-text);
+    transition: linear .5s;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    color: var(--secondary);
+}
+
+nav{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #7d976f;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 30px;
+}
+
+#popup{
+    filter: opacity(0);
+    color: white;
+    background-color: green;
+    width: 325px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: absolute;
+    transition: ease-in-out .3s;
+}
+
+#popup span{
+    position: absolute;
+    cursor: pointer;
+    top: -.5px;
+    right: 5px;
+    font-size: 26px;
+    color: white;
+}
